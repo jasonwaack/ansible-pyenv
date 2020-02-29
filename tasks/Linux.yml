@@ -1,6 +1,7 @@
 ---
 - name: Install pyenv build requirements
   become: yes
+  become_user: root
   package:
     name: "{{ pyenv_build_requirements }}"
 
